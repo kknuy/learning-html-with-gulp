@@ -1,4 +1,16 @@
-h1{
-    background-color: red;
-    font-size: 50px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno';
 }
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@import "src/scss/base/_mixins.scss";
+@import "src/scss/base/_variable.scss";
+@import "src/scss/blocks/_promo.scss";
+@import "src/scss/blocks/_header.scss";

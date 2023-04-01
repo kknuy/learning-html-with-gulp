@@ -37,7 +37,7 @@ function images() {
 
 
 function styles() {
-  return src("src/scss/style.scss")
+  return src("src/scss/**/*.+(scss|sass)")
     .pipe(scss({ outputStyle: "compressed" }))
     .pipe(concat("style.min.css"))
     .pipe(

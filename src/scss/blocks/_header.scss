@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        width: 250px;
+    }
+    &__official{
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        font-weight: 500;
+        font-size: 12px;
+        span {
+            font-size: 18px;
+        }
+    };
+    &__contacts{
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__phone{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+@import "button";
