@@ -1,0 +1,13 @@
+.text_descr{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #0D0D0D;
+    &_advantages{
+        margin-top: 20px;
+        span{
+            color: #FF0000;
+        }
+    }
+}
