@@ -1,0 +1,38 @@
+.carousel{
+    padding: 81px 0;
+    &__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 750px;
+        margin: 0 auto;
+        div{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .slick-prev{
+        cursor: pointer;
+        margin-right: 56px;
+        border: none;
+        background-color: #fff;
+        height: 50px;
+        img{
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-next{
+        cursor: pointer;
+        margin-left: 56px;
+        border: none;
+        background-color: #fff;
+        height: 50px;
+        img{
+            width: 31px;
+            height: 50px;
+        }
+    }
+}

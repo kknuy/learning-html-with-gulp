@@ -5,18 +5,29 @@
     border-radius: 5px;
     left: 0px;
     top: 0px;
-    background: #C70101;
+    background: $color-red;
     border-radius: 5px;
+    border: none;
 
     text-transform: uppercase;
     font-weight: 500;
     font-size: 12px;
     color: #fff;
+    cursor: pointer;
+    @include hover;
     &_main{
         margin-top: 65px;
         width: 300px;
         height: 50px;
         font-weight: 500;
         font-size: 16px;
+    }
+    &_form{
+        width: 303px;
+        height: 58px;
+    }
+    &_catalog{
+        width: 135px;
+        height: 44px;
     }
 }

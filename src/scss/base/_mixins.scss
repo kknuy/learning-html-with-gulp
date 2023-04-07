@@ -1,0 +1,8 @@
+@mixin hover {
+    &:hover{
+        box-shadow: 3px 3px 20px $color-red;
+        border: none;
+        transform: all;
+        transition: 0.5s all;
+    }
+}

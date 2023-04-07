@@ -7,7 +7,15 @@
     &_advantages{
         margin-top: 20px;
         span{
-            color: #FF0000;
+            color: $color-red;
         }
+    }
+    &_catalog{
+        margin-top: 15px;
+        width: 250px;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #0D0D0D;
     }
 }

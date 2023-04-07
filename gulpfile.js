@@ -15,13 +15,20 @@ function browsersync() {
     },
   });
 }
+function scripts() {
+  return src('src/js/index.js')
+    .pipe(concat('index.min.js'))
+    .pipe(uglify())
+    .pipe(dest('src/js'))
+    .pipe(browserSync.stream())
+}
 
 function cleanDist() {
   return del("dist");
 }
 
 function images() {
-  return src("src/images/**/*")
+  return src("src/img/**/*")
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
@@ -64,15 +71,15 @@ function build() {
 
 function watching() {
   watch(["src/scss/**/*.scss"], styles);
-  //watch(["src/js/**/*.js", "!src/js/main.min.js"], scripts);
+  watch(["src/js/**/*.js"], scripts);
   watch(["src/*.html"]).on("change", browserSync.reload);
 }
 
 exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
-//exports.scripts = scripts;
-//exports.images = images;
+exports.scripts = scripts;
+exports.images = images;
 exports.cleanDist = cleanDist;
 
 exports.build = series(cleanDist, images, build);
