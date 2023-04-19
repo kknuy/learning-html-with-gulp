@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,17 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="scss/slick.scss" />
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
 
-    <section class="promo">
+    <section id="up" class="promo">
       <div class="container">
         <header class="header">
           <a href="#" class="header__logo">
@@ -68,6 +65,7 @@
 
         </div>
       </div>
+      
     </section>
 
     <section class="advantages">
@@ -75,7 +73,7 @@
         <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
         <div class="advantages__wrapper">
           <div class="advantages__item">
-            <img src="img/icons/cup.png" alt="icon1" class="advantages__icon" />
+            <img src="img/icons/cup.png" alt="cup" class="advantages__icon wow animate__animated animate__swing animate__infinite	infinite" />
             <div class="text_title text_title_advantages">Делимся опытом</div>
             <div class="text_descr text_descr_advantages">
               Наши сотрудники всегда готовы поделиться своим опытом, так как
@@ -86,8 +84,8 @@
           <div class="advantages__item">
             <img
               src="img/icons/heart.png"
-              alt="icon2"
-              class="advantages__icon"
+              alt="heart"
+              class="advantages__icon advantages__icon_animated"
             />
             <div class="text_title text_title_advantages">
               Заботимся о здоровье
@@ -100,8 +98,8 @@
           <div class="advantages__item">
             <img
               src="img/icons/shoe.png"
-              alt="icon3"
-              class="advantages__icon"
+              alt="shoe"
+              class="advantages__icon  wow animate__animated animate__wobble animate__infinite	infinite"
             />
             <div class="text_title text_title_advantages">Учим бегать</div>
             <div class="text_descr text_descr_advantages">
@@ -125,8 +123,8 @@
           и мы перезвоним вам в течении 10 минут
         </div>
         <form id="consultation-form" class="feed_form" action="#">
-          <input name="name"  placeholder="Ваше имя" type="text" />
-          <input name="phone"  placeholder="Ваше телефон" type="text" />
+          <input name="name" minlength="2" placeholder="Ваше имя" type="text" />
+          <input name="phone"  placeholder="Ваше телефон"  />
           <input name="email"  placeholder="Ваше E-mail" type="email" />
           <button  class="button button_form">заказать кОНСУЛЬТАЦИЮ</button>
         </form>
@@ -134,7 +132,7 @@
 
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
       <div class="container">
         <div class="carousel__inner">
           <div>
@@ -148,7 +146,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <section class="catalog">
       <div class="container">
@@ -459,11 +457,11 @@
       </div>
   </section>
 
-  <section class="reviews">
+  <div class="reviews">
     <div class="container">
       <div class="title">отзывы клиентов</div>
       <div class="reviews__wrapper">
-        <div class="reviews__item">
+        <div class="reviews__item wow animate__animated animate__fadeInUp"  data-wow-duration="2s">
           <img src="img/reviews/photo_1.png" alt="profile" class="reviews__img">
           <div class="reviews__item_text">
             <div class="text_title text_title__reviews">Ирина Иванченко </div>
@@ -475,7 +473,7 @@
               Спасибо, RunSmart!  </div>
           </div>
         </div>
-        <div class="reviews__item">
+        <div class="reviews__item wow animate__animated animate__fadeInUp" data-wow-duration="2s">
           <img src="img/reviews/photo_2.png" alt="profile" class="reviews__img">
           <div class="reviews__item_text">
             <div class="text_title text_title__reviews">Иван Сёмочкин</div>
@@ -487,7 +485,7 @@
           </div>
         </div>
       </div>
-      <div class="reviews__item">
+      <div class="reviews__item wow animate__animated animate__fadeInUp" data-wow-duration="2s">
         <img src="img/reviews/photo_3.png" alt="profile" class="reviews__img">
         <div class="reviews__item_text">
           <div class="text_title text_title__reviews">Юлия Дашкина</div>
@@ -502,7 +500,8 @@
         </div>
       </div>
     </div>
-  </section>
+    </div>
+  </div>
 
   <footer class="footer">
       <div class="footer__map">
@@ -519,7 +518,7 @@
                 </a>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1783.4689742909982!2d37.64604485497742!3d55.768711973303375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e1!3m2!1sru!2sby!4v1680979982846!5m2!1sru!2sby" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1783.4689742909982!2d37.64604485497742!3d55.768711973303375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e1!3m2!1sru!2sby!4v1680979982846!5m2!1sru!2sby"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
   </footer>
 
@@ -530,9 +529,9 @@
       <div class="modal__subtitle">Просто заполните форму заявки</div>
       <div class="modal__description">и мы перезвоним вам в течении 10 минут</div>
       <form class="feed_form feed_form_mt26" action="#">
-        <input name="name" required placeholder="Ваше имя" type="text" />
-        <input name="phone" required placeholder="Ваше телефон" type="text" />
-        <input name="email" required placeholder="Ваше E-mail" type="email" />
+        <input name="name" minlength="2"  placeholder="Ваше имя" type="text" />
+        <input name="phone" placeholder="Ваше телефон"  />
+        <input name="email"  placeholder="Ваше E-mail" type="email" />
         <button class="button button_form">заказать кОНСУЛЬТАЦИЮ</button>
       </form>
     </div>
@@ -543,9 +542,9 @@
       <div class="modal__subtitle">Ваш заказ:</div>
       <div class="modal__description">и мы перезвоним вам в течении 10 минут</div>
       <form class="feed_form feed_form_mt26" action="#">
-        <input name="name" required placeholder="Ваше имя" type="text" />
-        <input name="phone" required placeholder="Ваше телефон" type="text" />
-        <input name="email" required placeholder="Ваше E-mail" type="email" />
+        <input name="name" minlength="2"  placeholder="Ваше имя" type="text" />
+        <input name="phone"  placeholder="Ваше телефон"  />
+        <input name="email"  placeholder="Ваше E-mail" type="email" />
         <button class="button button_form">Купить</button>
       </form>
     </div>
@@ -555,15 +554,17 @@
       <div class="modal__subtitle">Спасибо за вашу заявку!</div>
       <div class="modal__description">Наш менеджер свяжется с вами в <br> ближайшее время!</div>
     </div>
-
-
   </div>
 
+    <a href="#up" class="pageup"><i class="fa-sharp fa-regular fa-circle-up fa-2xl" style="color:red"></i></a>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
+    <!-- <script src="js/jquery.validate.min.js"></script> -->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="https://kit.fontawesome.com/2d1ad4dea1.js" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/index.min.js"></script>
   </body>
 </html>
